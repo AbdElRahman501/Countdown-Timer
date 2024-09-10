@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="popup.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="session-controls">
+        <div id="countdown">00:00</div>
+
+        <input
+          type="text"
+          id="session-name"
+          placeholder="What are you working on?"
+        />
+        <div class="timer-controls">
+          <input
+            type="number"
+            id="focus-minutes"
+            placeholder="Focus Minutes"
+            min="1"
+          />
+          <button id="start-focus">Start Focus</button>
+        </div>
+        <div class="timer-controls">
+          <input
+            type="number"
+            id="break-minutes"
+            placeholder="Break Minutes"
+            min="1"
+          />
+          <button id="start-break">Start Break</button>
+        </div>
+        <button id="stop">Stop</button>
+      </div>
+      <h3>Sessions</h3>
+      <div id="sessions-list"></div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

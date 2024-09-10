@@ -1,0 +1,200 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Styles */
+
+.container {
+    width: 398px;
+    background-color: #34495e;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Heading Styles */
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #1abc9c;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #ecf0f1;
+}
+
+/* Control Styles */
+
+.timer-controls,
+.music-controls {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Input Styles */
+
+input[type="number"],
+input[type="text"],
+input[type="url"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100px;
+}
+
+/* Button Styles */
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1abc9c;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button.red {
+    background-color: #e74c3c;
+}
+
+button:hover {
+    background-color: #16a085;
+}
+
+/* Countdown Styles */
+
+#countdown {
+    font-size: 50px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #1abc9c;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Stop Alarm Styles */
+#stop {
+    width: 100%;
+    background-color: #e74c3c;
+}
+
+#stop-alarm {
+    margin-top: 20px;
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #e74c3c;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#stop-alarm:hover {
+    background-color: #c0392b;
+}
+
+/* Music Input Styles */
+
+.music-inputs {
+    display: none;
+    margin-top: 10px;
+}
+
+.music-inputs.active {
+    display: flex;
+    gap: 10px;
+}
+
+#session-name {
+    width: 100%;
+}
+
+.session-controls {
+    margin: 10px 0;
+}
+
+/* Sessions List Container */
+#sessions-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Individual Session Item */
+.session-item {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.session-item:hover {
+    background: #f1f1f1;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Session Name */
+.session-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Time Spent Information */
+.session-item p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Sites List */
+.session-item ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+
+.session-item li {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Delete Button */
+.delete-btn {
+    background: #dc3545;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
